@@ -1,0 +1,45 @@
+.collection {
+    background-color: $bg-black;
+    padding: 127px 0;
+    &__row {
+        display: flex;
+    }
+    &__wrap {
+        background-color: $light-green;
+        padding: 90px 100px 90px 90px;
+        width: 35%;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 46px;
+        text-transform: capitalize;
+        color: $black-text;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 21px;
+        color: $black-text;
+        margin-bottom: 32px;
+    }
+    &__link {
+        color: $black-text;
+        border-bottom: 1px solid $black-text;
+        &::after {
+            top: 7px;
+        }
+        &:hover {
+            color: $green;
+            border-bottom: 1px solid $green;
+            transition-duration: 0.3s;
+        }
+    }
+    &__img {
+        width: 65%;
+        display: flex;
+        & img {
+            max-width: 100%;
+        }
+    }
+}

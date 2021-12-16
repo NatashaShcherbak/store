@@ -1,0 +1,117 @@
+.header {
+    padding-top: 40px;
+    padding-bottom: 82px;
+    text-transform: capitalize;
+    &__wrap {
+        display: flex;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        & img {
+            display: block;
+        }
+        &-item {
+            margin-left: 26px;
+        }
+    }
+    &__menu {
+        margin-left: 11.11%;
+        & a {
+            font-size: 16px;
+            line-height: 20px;
+            color: $text;
+            margin: 0 16px;
+            &:hover {
+                color: $red-accent;
+                text-decoration: overline;
+                transition-duration: 0.3s;
+            }
+        }
+    }
+    &__info {
+        margin-left: auto;
+        border-right: 1px solid $text;
+        position: relative;
+        align-self: flex-start;
+        &-text {
+            font-size: 14px;
+            line-height: 18px;
+            color: $text;
+            margin-right: 15px;
+            &:hover {
+                color: $red-accent;
+                text-decoration: overline;
+                transition-duration: 0.3s;
+            }
+        }
+        &-btn {
+            text-transform: capitalize;
+            background-color: inherit;
+            border: none;
+            cursor: pointer;
+            margin: 0 16px 0 6px;
+        }
+        &-basket {
+            background-image: url(../img/basket.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 38px;
+            height: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 18px;
+            &:hover {
+                transform: rotate(180deg);
+                transition-duration: 0.5s;
+            }
+        }
+        &::before,
+        &::after {
+            content: "";
+            width: 1px;
+            height: 20px;
+            background-color: $text;
+            position: absolute;
+            top: 0;
+        }
+        &::before {
+            left: 62px;
+        }
+        &::after {
+            right: 61px;
+        }
+    }
+    &__form {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        width: 124.1%;
+        position: absolute;
+        right: 0;
+        display: none;
+        &-item {
+            border: 1px solid $border-grey;
+            display: flex;
+            align-items: center;
+        }
+        &-search {
+            border: none;
+            outline: none;
+            height: 42px;
+            width: 87.7%;
+            padding: 5px 10px;
+            font-size: 16px;
+            line-height: 22px;
+            color: $black-text;
+        }
+        &-submit {
+            border: none;
+            background-color: inherit;
+            background-image: url(../img/arrow-black.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 24px 15px;
+            padding: 13px 18px;
+        }
+    }
+}

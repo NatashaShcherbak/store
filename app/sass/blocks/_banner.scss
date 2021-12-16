@@ -1,0 +1,20 @@
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-color: $green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 518px;
+    padding-bottom: 30px;
+    &__text {
+        font-size: 18px;
+        line-height: 28px;
+        color: $white;
+        text-transform: capitalize;
+    }
+}
+@media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    .banner {
+        background-image: url(../img/banner@2x.jpg);
+    }
+}
